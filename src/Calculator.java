@@ -29,8 +29,6 @@ public class Calculator {
         fourthNumber = inputReader.nextInt();
         System.out.println("You provided number: " +fourthNumber);
         int diff  = thirdNumber - fourthNumber;
-        System.out.println('Diff is: ' + diff);
-
-
+        System.out.println("Diff is: " + diff);
             }
 }
