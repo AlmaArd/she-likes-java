@@ -22,7 +22,6 @@ public class Calculator {
         System.out.println("Provide third number: ");
         int thirdNumber;
         int fourthNumber;
-        Scanner inputReader = new Scanner(System.in);
         thirdNumber = inputReader.nextInt();
         System.out.println("You provided number: " + thirdNumber);
         System.out.println("Provide fourth number: ");
