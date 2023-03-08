@@ -1,7 +1,7 @@
 package com.sda.she_likes_java.homework;
 import java.util.Scanner;
 
-public class Calculator {
+public class Calculator1 {
     // psvm - not so magic shortcut
 
     public static void main(String[] args) {
