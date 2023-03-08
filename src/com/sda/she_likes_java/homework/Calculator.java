@@ -1,10 +1,12 @@
+package com.sda.she_likes_java.homework;
+
 import java.util.Scanner;
 
 public class Calculator {
     // psvm - not so magic shortcut
     public static void main(String[] args) {
-        System.out.println("Calculator...");
-        System.out.println("Calculator sum of two numbers");
+        System.out.println("com.sda.she_likes_java.homework.Calculator...");
+        System.out.println("com.sda.she_likes_java.homework.Calculator sum of two numbers");
         System.out.println("Provide first number: ");
         int firstNumber;
         int secondNumber;
@@ -18,7 +20,7 @@ public class Calculator {
         int sum = firstNumber + secondNumber;
         System.out.println("Sum is: " + sum);
 
-        System.out.println("Calculator difference of two numbers");
+        System.out.println("com.sda.she_likes_java.homework.Calculator difference of two numbers");
         System.out.println("Provide third number: ");
         int thirdNumber;
         int fourthNumber;
@@ -30,7 +32,7 @@ public class Calculator {
         int difference = thirdNumber - fourthNumber;
         System.out.println("Difference is: " +difference);
 
-        System.out.println("Calculator product of two numbers");
+        System.out.println("com.sda.she_likes_java.homework.Calculator product of two numbers");
         System.out.println("Provide fifth number");
         int fifthNumber;
         int sixthNumber;
