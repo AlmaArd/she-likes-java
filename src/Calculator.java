@@ -30,5 +30,17 @@ public class Calculator {
         int difference = thirdNumber - fourthNumber;
         System.out.println("Difference is: " +difference);
 
+        System.out.println("Calculator product of two numbers");
+        System.out.println("Provide fifth number");
+        int fifthNumber;
+        int sixthNumber;
+        fifthNumber = inputReader.nextInt();
+        System.out.println("You provided number: " +fifthNumber);
+        System.out.println("Provide sixth number: ");
+        sixthNumber = inputReader.nextInt();
+        System.out.println("You provided number: " + sixthNumber );
+        int product = fifthNumber * sixthNumber;
+        System.out.println("Product is: " +product);
+
             }
 }
