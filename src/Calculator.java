@@ -18,5 +18,18 @@ public class Calculator {
         int sum = firstNumber + secondNumber;
         System.out.println("Sum is: " + sum);
 
+        System.out.println("Calculator difference of two numbers");
+        System.out.println("Provide third number: ");
+        int thirdNumber;
+        int fourthNumber;
+        Scanner inputReader = new Scanner(System.in);
+        thirdNumber = inputReader.nextInt();
+        System.out.println("You provided number: " + thirdNumber);
+        System.out.println("Provide fourth number: ");
+        fourthNumber = inputReader.nextInt();
+        System.out.println("You provided number: " + fourthNumber);
+        int difference = thirdNumber - fourthNumber;
+        System.out.println("Difference is: " +difference);
+
             }
 }

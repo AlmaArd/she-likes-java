@@ -28,7 +28,7 @@ public class Main {
         System.out.println(five + otherFive);
 
         // true and false
-        boolean  trueValue = true;
+        boolean trueValue = true;
         trueValue = false;
 
         System.out.println(trueValue);
@@ -38,3 +38,4 @@ public class Main {
         // double type for number with fraction part
         double trueEleven = 11.0;
     }
+}
