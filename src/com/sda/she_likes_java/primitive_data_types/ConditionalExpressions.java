@@ -27,7 +27,7 @@ public class ConditionalExpressions {
         if (personAge >= 18) {
             System.out.println("Hello Lady");
         } else {
-            System.out.println("It's time to go to sleet kid :)");
+            System.out.println("It's time to go to sleep kid :)");
         }
     }
 }
