@@ -16,7 +16,7 @@ public class Calculator {
         System.out.println("Your provided number: " + firstNumber);
         System.out.println("Provide second number: ");
         secondNumber = inputReader.nextInt();
-        System.out.println("You provided number: " +secondNumber);
+        System.out.println("You provided number: " + secondNumber);
         int sum = firstNumber + secondNumber;
         System.out.println("Sum is: " + sum);
 
@@ -30,19 +30,19 @@ public class Calculator {
         fourthNumber = inputReader.nextInt();
         System.out.println("You provided number: " + fourthNumber);
         int difference = thirdNumber - fourthNumber;
-        System.out.println("Difference is: " +difference);
+        System.out.println("Difference is: " + difference);
 
         System.out.println("com.sda.she_likes_java.homework.Calculator product of two numbers");
         System.out.println("Provide fifth number");
         int fifthNumber;
         int sixthNumber;
         fifthNumber = inputReader.nextInt();
-        System.out.println("You provided number: " +fifthNumber);
+        System.out.println("You provided number: " + fifthNumber);
         System.out.println("Provide sixth number: ");
         sixthNumber = inputReader.nextInt();
-        System.out.println("You provided number: " + sixthNumber );
+        System.out.println("You provided number: " + sixthNumber);
         int product = fifthNumber * sixthNumber;
-        System.out.println("Product is: " +product);
+        System.out.println("Product is: " + product);
 
-            }
+    }
 }
