@@ -29,16 +29,25 @@ public class BouncerInDiscoExercise10 {
         boolean isNotAllowedToPartyYoung = age < 18 || height < 2.0 || !canSing;
         boolean isAllowedToPartyOld = age >= 18 || height >= 2.0 || canSing;
 
-        if (!isAllowedToPartyYoung) {
+        if (isAllowedToPartyYoung) {
+        } else {
+            System.out.println(declineMessage);
+
             System.out.println("Hello , I am old bouncer");
             System.out.println("I am checking Your age, height and ability to sing");
+
             System.out.println("Let me know Your age");
+            int age = inputReader.nextInt();
+
             System.out.println("Now let me know Your height: ");
+            double height = inputReader.nextDouble();
+
             System.out.println("Please sing to me now: ");
+            boolean canSing = inputReader.hasNextBoolean();
+
             if (isAllowedToPartyOld) {
                 System.out.println("Have a great time at party!!!");
-            } else {
-                System.out.println(declineMessage);
+
             }
         } else {
             System.out.println(declineMessage);
@@ -46,17 +55,3 @@ public class BouncerInDiscoExercise10 {
     }
 }
 
-// if (age >= 18) {
-//                System.out.println("Ok, so You're adult:)");
-//                System.out.println("Let me know Your height: ");
-//                int height = inputReader.nextInt();
-//                if (height >= 200) {
-//                    System.out.println("Great!!!! Welcome to the party:)");
-//                } else {
-//                    System.out.println(declineMessage);
-//                }
-//            } else {
-//                System.out.println(declineMessage);
-//            }
-//        }
-//    }
