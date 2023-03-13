@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class BouncerInDiscoExercise10 {
+public class BouncerInDiscoExercise10Version2 {
     public static void main(String[] args) {
         System.out.println("Hello, I am young bouncer");
         System.out.println("I am checking Your age, height and ability to sing");
@@ -24,7 +24,6 @@ public class BouncerInDiscoExercise10 {
         boolean canSing = inputReader.hasNextBoolean();
 
         boolean isAllowedToPartyYoung = age >= 18 && height >= 2.0 && canSing;
-        boolean isNotAllowedToPartyYoung = age < 18 || height < 2.0 || !canSing;
         boolean isAllowedToPartyOld = age >= 18 || height >= 2.0 || canSing;
 
         if (!isAllowedToPartyYoung) {
