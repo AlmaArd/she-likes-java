@@ -52,7 +52,7 @@ public class BouncerInDiscoExercise10 {
             canSing = inputReader.hasNextBoolean();
 
             System.out.println("Please sing to me now: ");
-            boolean canSing = inputReader.hasNextBoolean();
+            canSing = inputReader.hasNextBoolean();
 
             if (isAllowedToPartyOld) {
                 System.out.println("Have a great time at party!!!");
