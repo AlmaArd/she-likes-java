@@ -1,8 +1,4 @@
-package com.sda.she_likes_java.homework;
-
-import java.util.Scanner;
-//Exercise 10.
-//A story about bouncers in a disco
+// A story about bouncers in a disco
 //Prepare a new class BouncersInDiscoStory and in it
 //- get the user’s age, ability to sing well and height from the console
 //- there are two bouncers in the disco: young and old
@@ -10,28 +6,55 @@ import java.util.Scanner;
 //- Old has some kind of sight problem - so if any of the conditions are met, the person can enter the disco
 //- people try to cheat, so if someone is rejected by the young bouncer they try again with the old one:)
 
-public class BouncerInDiscoExercise10Version2 {
-    public static void main(String[] args) {
-        System.out.println("Exercise 10 - Bouncer in disco");
+import java.util.Scanner;
 
-        System.out.println();
+public class BouncerInDiscoExercise10 {
+    public static void main(String[] args) {
+        System.out.println("Hello, I am young bouncer");
+        System.out.println("I am checking Your age, height and ability to sing");
+        System.out.println("First let me know Your age now");
 
         Scanner inputReader = new Scanner(System.in);
-        System.out.println("Welcome to the disco, I am ");
-        System.out.println(" And tell me what is Your height");
-        int userAge = inputReader.nextInt();
-        double userHeight = inputReader.nextDouble();
-        boolean
 
+        String declineMessage = "Sorry, go home:)";
+        int age = inputReader.nextInt();
+        System.out.println("Now let me know Your height: ");
+        double height = inputReader.nextDouble();
+        System.out.println("Please sing to me now: ");
+        boolean canSing = inputReader.hasNextBoolean();
 
-        if (userAge >= 16) {
-            if (userHeight > 1.6) {
-                System.out.println("Please enter the disco");
+        boolean isAllowedToPartyYoung = age >= 18 && height >= 2.0 && canSing;
+        boolean isNotAllowedToPartyYoung = age < 18 || height < 2.0 || !canSing;
+        boolean isAllowedToPartyOld = age >= 18 || height >= 2.0 || canSing;
+
+        if (!isAllowedToPartyYoung) {
+            System.out.println("Hello , I am old bouncer");
+            System.out.println("I am checking Your age, height and ability to sing");
+            System.out.println("Let me know Your age");
+            System.out.println("Now let me know Your height: ");
+            System.out.println("Please sing to me now: ");
+            if (isAllowedToPartyOld) {
+                System.out.println("Have a great time at party!!!");
             } else {
-                System.out.println("You are too short, please leave");
+                System.out.println(declineMessage);
             }
         } else {
-            System.out.println("You are too young, please leave");
+            System.out.println(declineMessage);
         }
     }
 }
+
+// if (age >= 18) {
+//                System.out.println("Ok, so You're adult:)");
+//                System.out.println("Let me know Your height: ");
+//                int height = inputReader.nextInt();
+//                if (height >= 200) {
+//                    System.out.println("Great!!!! Welcome to the party:)");
+//                } else {
+//                    System.out.println(declineMessage);
+//                }
+//            } else {
+//                System.out.println(declineMessage);
+//            }
+//        }
+//    }
