@@ -29,17 +29,15 @@ public class BouncerInDiscoExercise10 {
         boolean isNotAllowedToPartyYoung = age < 18 || height < 2.0 || !canSing;
         boolean isAllowedToPartyOld = age >= 18 || height >= 2.0 || canSing;
 
-        if (isAllowedToPartyYoung) {
-            System.out.println("Have a great time at party!!!");
-            if (isNotAllowedToPartyYoung) {
+        if (!isAllowedToPartyYoung) {
+            if (isAllowedToPartyOld)
                 System.out.println("Hello , I am old bouncer");
                 System.out.println("I am checking Your age, height and ability to sing");
                 System.out.println("Let me know Your age");
                 System.out.println("Now let me know Your height: ");
                 System.out.println("Please sing to me now: ");
             } else {
-                System.out.println(isAllowedToPartyOld);
-            }
+                System.out.println("Have a great time at party!!!");
         } else {
             System.out.println(declineMessage);
         }
