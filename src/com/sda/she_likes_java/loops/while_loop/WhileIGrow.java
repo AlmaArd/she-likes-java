@@ -13,6 +13,6 @@ public class WhileIGrow {
             ageOfTheKid++; //this is shorter version of: ageOfTheKid = geOfTheKid + 1;
         }
 
-        System.out.println("Go to party!!!");
+        System.out.println("I am " + ageOfTheKid + " years old, Mama: yes, go!");
     }
 }
