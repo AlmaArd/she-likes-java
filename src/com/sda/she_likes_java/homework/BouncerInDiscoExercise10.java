@@ -9,18 +9,18 @@ package com.sda.she_likes_java.homework;
 //- people try to cheat, so if someone is rejected by the young bouncer they try again with the old one:)
 
 import java.util.Scanner;
-
 public class BouncerInDiscoExercise10 {
     public static void main(String[] args) {
         System.out.println("Hello, I am young bouncer");
         System.out.println("I am checking Your age, height and ability to sing");
-        System.out.println("First let me know Your age now");
+
 
         int age;
         double height;
         boolean canSing;
 
         Scanner inputReader = new Scanner(System.in);
+        System.out.println("First let me know Your age now");
         age = inputReader.nextInt();
 
         String declineMessage = "Sorry, go home:)";
@@ -32,12 +32,11 @@ public class BouncerInDiscoExercise10 {
         canSing = inputReader.hasNextBoolean();
 
 
+        boolean isAllowedToParty = age >= 18 && height >= 2.0 && canSing == true;
 
-        boolean isAllowedToPartyYoung = age >= 18 && height >= 2.0 && canSing;
-        boolean isNotAllowedToPartyYoung = age < 18 || height < 2.0 || !canSing;
-        boolean isAllowedToPartyOld = age >= 18 || height >= 2.0 || canSing;
 
-        if (isAllowedToPartyYoung) {
+        if (isAllowedToParty) {
+            System.out.println("Welcome to the disco!!!");
         } else {
             System.out.println(declineMessage);
 
@@ -49,17 +48,19 @@ public class BouncerInDiscoExercise10 {
 
             System.out.println("Now let me know Your height: ");
             height = inputReader.nextDouble();
-            canSing = inputReader.hasNextBoolean();
 
             System.out.println("Please sing to me now: ");
             canSing = inputReader.hasNextBoolean();
 
-            if (isAllowedToPartyOld) {
-                System.out.println("Have a great time at party!!!");
+            isAllowedToParty = age >= 18 || height >= 2.0 || canSing == true;
 
+            if (isAllowedToParty) {
+                System.out.println("Have a great time at party!!!");
+            } else {
+                System.out.println(declineMessage);
             }
         }
-            System.out.println(declineMessage);
-        }
+
     }
+}
 
