@@ -9,7 +9,8 @@ package com.sda.she_likes_java.homework;
 //- people try to cheat, so if someone is rejected by the young bouncer they try again with the old one:)
 
 import java.util.Scanner;
-public class BouncerInDiscoExercise10 {
+
+public class BouncerInDiscoExercise10WithFunctions {
     public static void main(String[] args) {
         System.out.println("Hello, I am young bouncer");
 
@@ -32,13 +33,14 @@ public class BouncerInDiscoExercise10 {
         canSing = inputReader.nextBoolean();
 
 
-        boolean isAllowedToParty = age >= 18 && height > 200 && canSing == true;
+        boolean isAllowedToParty = checkedByYoungBouncer(age, height, canSing);
 
 
         if (isAllowedToParty) {
             System.out.println("Welcome to the disco!!!");
         } else {
             System.out.println("Sorry, go home");
+            System.out.println("I'll try with second bouncer");
 
             System.out.println("Hello , I am old bouncer");
             System.out.println("I am checking Your age, height and ability to sing");
@@ -51,7 +53,7 @@ public class BouncerInDiscoExercise10 {
             System.out.println("Can You sing Well?  ");
             canSing = inputReader.nextBoolean();
 
-            isAllowedToParty = age >= 18 || height > 200 || canSing == true;
+            isAllowedToParty = checkedByOldBouncer(age, height, canSing);
 
             if (isAllowedToParty) {
                 System.out.println("Have a great time at party!!!");
@@ -61,5 +63,14 @@ public class BouncerInDiscoExercise10 {
         }
 
     }
-}
 
+// first line is function prototype
+
+    public static boolean checkedByYoungBouncer(int age, int height, boolean canSing) {
+        return age >=18 && height >200 && canSing == true;
+    }
+
+    public static boolean checkedByOldBouncer (int age, int height, boolean canSing) {
+        return age >=18 || height >200 || canSing == true;
+    }
+}
