@@ -12,7 +12,7 @@ public class NumberOfDaysInMonths {
         switch (monthNumber) {
             // if there's no matching case value default one would be used
             // default is optional - sometimes it doesn't exist
-           default:
+            default:
                 System.out.println("Dont cheat;)");
             case 1:
             case 3:
