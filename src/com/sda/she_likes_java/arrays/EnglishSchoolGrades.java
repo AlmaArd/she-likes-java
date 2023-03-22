@@ -7,7 +7,7 @@ public class EnglishSchoolGrades {
         int[] myGradesOnEnglishClass = new int[10000];
 
         Random gradeGenerator = new Random(7);
-        // initializing grades in some random scoresc - created virtual grades
+        // initializing grades in some random scores - created virtual grades
         for (int index = 0; index < myGradesOnEnglishClass.length; index++) {
             myGradesOnEnglishClass[index] = 1+ gradeGenerator.nextInt(6); //in PL max grade is 6; 1+ (6) - kad nebūtų 0
         }
