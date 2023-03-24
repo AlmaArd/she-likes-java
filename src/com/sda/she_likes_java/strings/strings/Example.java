@@ -17,6 +17,7 @@ public class Example {
         // %d means number wildcard
         System.out.println(String.format(" Hi, I'm %s %s. I am %s years old.",name, surname, age));
         System.out.println(" Hi, I'm %s %s. I am %s years old.".formatted(name, surname, age));
+        // formated works the same way as string format, just not calling function and arguments after
         // System.out.println(info);
         // String.format(" Hi, I'm %s %s. I am %s years old.",name, surname, age);
     }
