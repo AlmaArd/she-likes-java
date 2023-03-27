@@ -13,10 +13,10 @@ Try to create two different addresses objects and init them with some values.
 public class Address {
 // it is defined how your java class looks like. it is like a plan.
 // classes is just a plan
-        String country;
-        String city;
-        String street;
-        int postalCode;
+        public String country;
+        public String city;
+        public String street;
+        public int postalCode;
         String postalCodeOther;
         // below according to the plans workers are building house
 

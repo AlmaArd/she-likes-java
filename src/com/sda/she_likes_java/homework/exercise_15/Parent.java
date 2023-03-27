@@ -1,7 +1,7 @@
 package com.sda.she_likes_java.homework.exercise_15;
 
-import com.sda.she_likes_java.homework.Address;
-import com.sda.she_likes_java.homework.Person;
+import com.sda.she_likes_java.classes.Address;
+import com.sda.she_likes_java.classes.Person;
 
 /*Create a Parent class containing the following variables:
 - first name
@@ -13,7 +13,6 @@ import com.sda.she_likes_java.homework.Person;
 public class Parent {
     String name;
     String surname;
-
 
     public static void main(String[] args) {
         Parent myParentFather = new Parent();
