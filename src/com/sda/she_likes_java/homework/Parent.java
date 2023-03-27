@@ -1,4 +1,7 @@
 package com.sda.she_likes_java.homework;
+
+import java.sql.SQLOutput;
+
 /*Create a Parent class containing the following variables:
 - first name
 - surname
@@ -13,15 +16,19 @@ public class Parent {
 
     public static void main(String[] args) {
         Parent myParentFather = new Parent();
+        Parent myParentMother = new Parent();
         myParentFather.name = "Jonas";
         myParentFather.surname = "Ardaravicius";
+        myParentMother.name = "Zinaida";
+        myParentMother.surname = "Ardaraviciene";
 
 
-        Address myParentFatherAddress = new Address();
-        myParentFatherAddress.country = "Lithuania";
-        myParentFatherAddress.city = "Alytus";
-        myParentFatherAddress.postalCode = 6337;
-        myParentFatherAddress.street = "Topoliu street";
+        Address myParentsAddress = new Address();
+        myParentsAddress.country = "Lithuania";
+        myParentsAddress.city = "Alytus";
+        myParentsAddress.postalCode = 6337;
+        myParentsAddress.street = "Topoliu street";
+
 
         Person myParentFirstChild = new Person();
         myParentFirstChild.name = "Alma";
@@ -35,26 +42,17 @@ public class Parent {
         myParentSecondChild.age = 34;
         myParentSecondChild.address = "Unknown st 5 - 10, Amsterdam, Netherlands";
 
-        System.out.println("Hello, my parent father name is %s and surname is %s and address is %s %s %d %s" .formatted(myParentFather.name,myParentFirstChild.surname, myParentFatherAddress.country, myParentFatherAddress.city, myParentFatherAddress.postalCode, myParentFatherAddress.street));
+        System.out.println("Family information:");
+        System.out.println("Hello, my fathers name is %s and surname is %s" .formatted(myParentFather.name,myParentFather.surname));
+        System.out.println("Hello, my mothers name is %s and surname is %s" .formatted(myParentMother.name,myParentMother.surname));
+        System.out.println("Hello my parents address is %s, %s, postal code LT - %d, %s" .formatted(myParentsAddress.country, myParentsAddress.city, myParentsAddress.postalCode, myParentsAddress.street));
+        System.out.println("Children:");
+        System.out.println("First child: %s, %s, age %d" . formatted(myParentFirstChild.name, myParentFirstChild.surname, myParentFirstChild.age));
+        System.out.println("And address: %s" .formatted(myParentFirstChild.address));
+        System.out.println("Second child: %s, %s, age %d" . formatted(myParentSecondChild.name, myParentSecondChild.surname, myParentSecondChild.age));
+        System.out.println("And address: %s" .formatted(myParentSecondChild.address));
 
     }
 }
 
-class Address {
-    Address myAddress = new Address();
-    String country;
-    String city;
-    String street;
-    int postalCode;
-    String postalCodeOther;
-
-}
-
-class Person {
-
-    String name;
-    String surname;
-    int age;
-    String address;
-}
 
