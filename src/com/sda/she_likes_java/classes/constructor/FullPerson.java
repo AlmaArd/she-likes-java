@@ -60,13 +60,16 @@ public class FullPerson {
                 ", address=" + address +
                 '}';
     }
+
     public void describeYourself() {
-        System.out.println("Hi I'm " +name);
+        System.out.println("Hi I'm " + name);
     }
-    public static void genericDescription(){
+
+    public static void genericDescription() {
         System.out.println("Generic description");
     }
-    public static void main(String[] args) {  // its afunction
+
+    public static void main(String[] args) {  // its a function
         FullAddress address = new FullAddress("Italy", "Roma", "La Romania", "007");
         FullPerson person = new FullPerson("Mariusz", "P.", 41, address);
         System.out.println("Person is: " + person);

@@ -17,6 +17,7 @@ public class Address {
         public String city;
         public String street;
         public int postalCode;
+
         String postalCodeOther;
         // below according to the plans workers are building house
 
