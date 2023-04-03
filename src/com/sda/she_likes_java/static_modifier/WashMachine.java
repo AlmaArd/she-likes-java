@@ -5,41 +5,38 @@ public class WashMachine {
     private String brand;
     private String model;
     private int serialNumber;
-
     public WashMachine(String brand, String model) {
         this.brand = brand;
         this.model = model;
         numberOfCreatedMachines++;
         serialNumber++;
     }
-
-    public static int getNumberOfCreatedMachines() {
-        return numberOfCreatedMachines;
-    }
-
     public static void setNumberOfCreatedMachines(int numberOfCreatedMachines) {
         WashMachine.numberOfCreatedMachines = numberOfCreatedMachines;
     }
-
+    // instance method
+    public void setSerialNumber(int serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+    // class method
+    public static int getNumberOfCreatedMachines() {
+        return numberOfCreatedMachines;
+    }
+    // instance method
     public int getSerialNumber() {
         return serialNumber;
     }
-
-    public void setSerialNumber(int i) {
-    }
-
+    // instance method
     public String getBrand() {
         return brand;
     }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
     public String getModel() {
         return model;
     }
-
+    // instance method
+    public void increaseSerialNumber() {
+        serialNumber++;
+    }
     @Override
     public String toString() {
         return "WashMachine{" +
@@ -48,3 +45,10 @@ public class WashMachine {
                 '}';
     }
 }
+
+
+
+
+
+
+
