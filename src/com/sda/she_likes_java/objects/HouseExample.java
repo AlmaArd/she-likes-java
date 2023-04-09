@@ -3,7 +3,7 @@ package com.sda.she_likes_java.objects;
 public class HouseExample {
 
     public static void main(String[] args) {
-        House myHouse = new House(4, 2);
+        House myHouse = new House(4, 2); //here we created new object
         System.out.println("I've got new house: " + myHouse);
         //stage1
 
