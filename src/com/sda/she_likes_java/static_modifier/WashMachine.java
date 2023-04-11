@@ -2,13 +2,13 @@ package com.sda.she_likes_java.static_modifier;
 
 public class WashMachine {
     private static int numberOfCreatedMachines;
-    private String brand;
-    private String model;
+    private String brand; //this is variable
+    private String model;  //this is variable
     private int serialNumber;
     public WashMachine(String brand, String model) {
         this.brand = brand;
         this.model = model;
-        numberOfCreatedMachines++;
+        numberOfCreatedMachines++; // skaičiuoja kiek buvo sukurta ojektų
         serialNumber++;
     }
     public static void setNumberOfCreatedMachines(int numberOfCreatedMachines) {

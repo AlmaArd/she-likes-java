@@ -7,7 +7,6 @@ public class WashMachineFactory {
         WashMachine samsung = new WashMachine("Samsung", "1x2");
         System.out.println("Current population number is: " + WashMachine.getNumberOfCreatedMachines());
         System.out.println("samsung serial number is: " + samsung.getSerialNumber());
-        samsung.setSerialNumber(5);
         // DO NOT USE INSTANCE REFERENCES TO ACCESS STATIC MEMBERS (FIELDS/METHODS)
         samsung.setNumberOfCreatedMachines(1000);
         samsung.increaseSerialNumber();
