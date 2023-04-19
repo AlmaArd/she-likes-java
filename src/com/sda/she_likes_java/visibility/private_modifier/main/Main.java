@@ -7,7 +7,10 @@ public class Main {
         Car funnyCar = new Car();
         // brand is private so not visible outside the class
        // funnyCar.brand
+
+       // funnyCar.setBrand("toyota");
         funnyCar.model = "colorra";
+
 
         // cannot see colour from outside its class package
         // funnyCar.colour = "pink";
