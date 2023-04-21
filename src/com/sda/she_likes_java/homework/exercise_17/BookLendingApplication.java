@@ -20,6 +20,7 @@ At the very end, write out the number of books created - use a variable of type 
         // tie kiekviena new Book iškviečiam konstruktorių public Book
         // ir perduodam konstruktoriaus parametrus į new Book objekto parametrus.
         // ir padidina numberOfLentBooks per +1
+
         Random generator = new Random();
         int number = generator.nextInt(1, 6);
 
