@@ -23,7 +23,7 @@ public class Main {
         castedFromHuman.learnJava();
         Man manForSure = new Man();
         Human anotherMan = new Man();
-       //humanLife.tryToCastHumanToMan(anotherMan);
+      // humanLife.tryToCastHumanToMan(anotherMan);
         //humanLife.tryToCastHumanToMan(new Man());
         humanLife.tryToCastHumanToMan(new Woman());
     }
