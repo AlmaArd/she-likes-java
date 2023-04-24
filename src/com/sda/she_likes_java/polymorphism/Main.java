@@ -30,4 +30,7 @@ public class Main {
     public static void callAnimal(Dog animal) {
             animal.makeSound();
     }
+    public static void callAnimal(Cat animal) {
+        animal.makeSound();
+    }
 }
