@@ -13,11 +13,11 @@ public class Main {
 
         Vehicle airplane = new Airplane();
         airplane.move();
-        ((Flying) airplane).fly();
+        ((Flying) airplane).fly();// this is casting
 
         Vehicle submarine = new Submarine();
         submarine.move();
-        ((Diving) submarine).dive();
+        ((Diving) submarine).dive(); //this is casting
 
     }
 }
