@@ -7,6 +7,7 @@ public class Main {
         // and assinged to the variable Animal, ot the same type
         Cat myCat = new Cat();
         Animal secondCat = new Cat();
+        secondCat.makeSound();
         Animal dog = new Dog();
         dog.makeSound();
 

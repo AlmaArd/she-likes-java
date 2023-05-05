@@ -30,8 +30,7 @@ public class Robot {
     public void moveForward() {
         xPossition++;
         System.out.println("I'm moving forward");
-
-
+        doInternalTwiks();
     }
 
     public void  moveBackward(){
