@@ -6,4 +6,6 @@ public class Person {
     public int age;
     public String address;
 
+    public Object getName() {
+    }
 }
