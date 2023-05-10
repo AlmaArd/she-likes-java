@@ -8,7 +8,7 @@ public class Main {
         myAirplane.takeOff();
         myAirplane.takeOff();
         System.out.println("Let's go to Vilnius");
-        myAirplane.flyTo(21, 52);
+        myAirplane.flyTo(25, 54);
         myAirplane.land();
         myAirplane.land();
     }
