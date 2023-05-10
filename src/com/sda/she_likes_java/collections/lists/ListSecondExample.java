@@ -1,6 +1,6 @@
 package com.sda.she_likes_java.collections.lists;
 
-import com.sda.she_likes_java.collections.sets.Person;
+import com.sda.she_likes_java.collections.Person;
 
 import java.util.ArrayList;
 import java.util.List;

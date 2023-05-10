@@ -1,4 +1,4 @@
-package com.sda.she_likes_java.collections.sets;
+package com.sda.she_likes_java.collections;
 
 import java.util.Objects;
 
