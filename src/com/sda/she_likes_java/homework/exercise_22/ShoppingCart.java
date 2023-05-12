@@ -33,8 +33,11 @@ ShoppingCart {
     }
     public double calculateTotalBasketValue() {
         double sum = 0;
-        for (int i = 0; i < items.size(); i++) {
-            sum += items.get(i).getProductPrice();
+        for (int i = 0; i < items.size(); i++) { // items.size - tai metodas pasakantis kiek prekių yra krepšelyje
+            // items[i]
+            //items.size() is like array.length
+            // VAT 10
+            sum += (items.get(i).getProductPrice()*1.23); // daugina iš VAT
         }
         return sum;
     }
