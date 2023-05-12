@@ -3,11 +3,13 @@ package com.sda.she_likes_java.objects_equality;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ListMain {
 
     public static void main(String[] args) {
         List<Object> personObjects = new ArrayList();
         List personList = new ArrayList();
+
 
         Person me = new Person("mariusz", "p", 17);
         Person me2 = new Person("marek", "b", 40);

@@ -7,5 +7,6 @@ public class Person {
     public String address;
 
     public Object getName() {
+
     }
 }
