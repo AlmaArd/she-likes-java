@@ -20,7 +20,7 @@ public class Main {
         // let's add another item to the list. After forts list You can add
         trousers.add(new Trousers("jeans", "primark"));
 
-        // paprastesnis, naujesnis List sukurimas su limited number of items - 3 items , thats all. List.of - si frozen list
+        // paprastesnis, naujesnis List sukurimas su limited number of items - 3 items , thats all. List.of - is frozen list:)
         List<Trousers> trousersList = List.of(
                 new Trousers("jeans", "big star"),
                 new Trousers("jeans", "big star"),
