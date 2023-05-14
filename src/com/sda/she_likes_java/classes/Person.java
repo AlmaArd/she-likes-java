@@ -8,5 +8,6 @@ public class Person {
 
     public Object getName() {
 
+        return null;
     }
 }
