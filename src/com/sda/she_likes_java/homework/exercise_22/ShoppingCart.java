@@ -33,12 +33,18 @@ ShoppingCart {
     }
     public double calculateTotalBasketValue() {
         double sum = 0;
-        for (int i = 0; i < items.size(); i++) { // items.size - tai metodas pasakantis kiek prekių yra krepšelyje
+        for (Item item : items) { // items.size - tai metodas pasakantis kiek prekių yra krepšelyje
             // items[i]
             //items.size() is like array.length
             // VAT 10
-            sum += (items.get(i).getProductPrice()*1.23); // daugina iš VAT
+            sum += (item.getProductPrice() * 1.23); // daugina iš VAT
         }
+        //for (int i = 0; i < items.size(); i++) { // items.size - tai metodas pasakantis kiek prekių yra krepšelyje
+            // items[i]
+            //items.size() is like array.length
+            // VAT 10
+           // sum += (items.get(i).getProductPrice()*1.23); // daugina iš VAT
+       // }
         return sum;
     }
 }
