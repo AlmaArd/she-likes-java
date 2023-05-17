@@ -1,6 +1,6 @@
 package operators;
 
-// Tree wayoperator
+// Tree way operator
 public class TermaryOperator {
 
     public static void main(String[] args) {
