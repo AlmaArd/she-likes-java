@@ -54,11 +54,11 @@ public class SortedPerson implements Comparable<SortedPerson> {
 //        return age - o.getAge();
         System.out.println("Called by Java");
         if (age < o.getAge()) {
-            return -1;
+            return -1; // we need to stay with no sort
         } else if (age > o.getAge()) {
-            return 1;
+            return 1; // we need to swap objects
         } else {
-            return 0;
+            return 0; // we don't care about objects
         }
     }
 }
