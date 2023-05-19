@@ -53,12 +53,14 @@ public class SortedPerson implements Comparable<SortedPerson> {
 //        return o.getAge() - age;
 //        return age - o.getAge();
         System.out.println("Called by Java");
+
+        // kad sortintų atvirkščiai: 1; -1, 0
         if (age < o.getAge()) {
             return -1; // we need to stay with no sort
         } else if (age > o.getAge()) {
             return 1; // we need to swap objects
         } else {
-            return 0; // we don't care about objects
+            return 0; // we don't care about objects. It's the same, dont change anything
         }
     }
 }
