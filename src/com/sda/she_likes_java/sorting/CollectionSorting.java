@@ -14,6 +14,7 @@ public class CollectionSorting {
 
         Collections.sort(numbers);
         System.out.println("Sorted numbers:" + numbers);
-
+        // if You need to sort, use collections sort.
+        //Isrusiuos natural order - nuo maziausio iki didziausio skaiciaus
     }
 }

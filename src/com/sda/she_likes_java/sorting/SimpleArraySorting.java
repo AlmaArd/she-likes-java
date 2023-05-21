@@ -10,8 +10,8 @@ public class SimpleArraySorting {
         Object arrayObject = numbers2;
         System.out.println(numbers2.length);
 
-        // Arrays - contains useful methods for arrays
-        // Collections - contains useful methods for collections
+        // Arrays - it's a class, contains useful methods for arrays
+        // Collections - it's a class, contains useful methods for collections
 
         Arrays.sort(numbers2);
         System.out.println("numbers2: " + numbers2);
