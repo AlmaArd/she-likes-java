@@ -22,7 +22,7 @@ public class BankConnector {
     public Integer accountBalanceAlwaysSuccessful() {
         Random random = new Random();
         int randomNumber = random.nextInt();
-        if (randomNumber % 2 == 0) {
+        if (randomNumber % 2 == 0) { // % 2 == 0 - skai2ius be liekanos, dalinanat i6 2
             return 100;
         } else {
             System.out.println("Not ok");
