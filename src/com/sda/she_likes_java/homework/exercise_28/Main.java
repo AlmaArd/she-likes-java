@@ -1,20 +1,21 @@
 package com.sda.she_likes_java.homework.exercise_28;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-import java.util.Comparator;
+public class Main {
+    public static void main(String[] args) {
+        List<MyDate> myDate = new ArrayList<>();
 
-//public class Main
-//        implements Comparator<MyDate> {
+        myDate.add(new MyDate("February16th"));
+        myDate.add(new MyDate("March11th"));
+        myDate.add(new MyDate("January13th"));
+        myDate.add(new MyDate("May1st"));
+        myDate.add(new MyDate("June24th"));
+        myDate.add(new MyDate("July6th"));
 
-//    @Override
-//    public int compare(MyDate o1, MyDate o2) {
-//        System.out.println("Using Main Of MyDate class");
-//        if (o1.getName() < o2.getName()) {
-//            return 1;
-//        } else if (o1.getName() > o2.getName()) {
-//            return -1;
-//        } else {
-//            return 0;
-//        }
-//    }
-//}
+        Collections.sort(myDate, new SortingByItemLength());
+        System.out.println("My sorted dates names: " +myDate);
+    }
+}
