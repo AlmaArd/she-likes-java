@@ -30,6 +30,7 @@ public class DatabaseUtils {
      * WHERE ID=3;
     */
     // handle internally
+    // by getting connection we are sending some queries(uzklausas) to database
     public static Connection getConnection () {
         // trows SQLExeption
         try {

@@ -3,7 +3,7 @@ package com.sda.she_likes_java.database;
 import java.util.List;
 
 public class AddressRepository {
-
+        // below we create a string with many lines
     private static final String allAddressesQuery = """
             SELECT ID, CITY, STREET, POSTAL_CODE, COUNTRY
             FROM ADDRESSES
