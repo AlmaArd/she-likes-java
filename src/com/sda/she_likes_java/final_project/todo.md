@@ -8,3 +8,4 @@
   - filtering based on user input
 - Calendar with all events
 - Store state in db
+
