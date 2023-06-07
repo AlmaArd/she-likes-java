@@ -1,6 +1,6 @@
 package com.sda.she_likes_java.final_project.repository;
 
-import com.sda.she_likes_java.final_project.User;
+import com.sda.she_likes_java.final_project.entity.User;
 import com.sda.she_likes_java.final_project.exception.InexperiencedUserException;
 
 import java.time.LocalDate;
